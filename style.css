@@ -1,0 +1,342 @@
+:root {
+    --branco: white;
+    --preto: black;
+}
+
+.MenuHeader {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 0px 40px;
+}
+
+ol.OrderItensMenu {
+    margin: 0px !important;
+    padding: 0px 100px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 80px;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+img.LogoGarcez {
+    width: 160px;
+}
+
+.OrderItensMenu a {
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+}
+
+.lora {
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.OrderItensMenu li:hover {
+    transform: translateY(-10px);
+}
+
+.OrderItensMenu li {
+    transition: all .5s;
+}
+
+#SlideHome {
+    display: flex;
+    align-items: center;
+    padding: 30px 30px 70px 30px;
+    justify-content: center;
+}
+
+.TextoSlide {
+    padding: 0px 40px;
+    width: 100%;
+}
+
+#SlideHome h2 {
+    font-size: 45px;
+    text-transform: uppercase;
+    margin: 0px 0px;
+}
+
+.TextoSlide p {
+    font-size: 22px;
+}
+
+section#InfoDesc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.BoxDesc {
+    background: #f2f2f2;
+    padding: 30px 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s;
+}
+
+.BoxDesc h4 {
+    margin: 8px 10px 0px;
+    font-size: 25px;
+}
+
+.displaynone {
+    display: none;
+}
+
+.BoxDesc:hover {
+    cursor: pointer;
+    background: yellow;
+    transform: translateY(-15px);
+}
+
+.NewOrderItens {
+    display: flex !important;
+    margin: 10px 0px 0px 0px;
+}
+
+.ImagemSlide {
+    animation: flutuar 3s ease-in-out infinite;
+}
+
+@keyframes flutuar {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.SelectDescritores a {
+    text-decoration: none;
+    color: black;
+    transition: all .5s;
+}
+
+
+.SelectDescritores a h4 {
+    font-size: 20px !important;
+}
+
+.SelectDescritores {
+    /* display: flex !important; */
+    /* margin: 10px 0px 0px 0px; */
+}
+
+.SelectDescritores a:hover {
+    transform: translateY(8px);
+}
+
+.BoxDesc4 {
+    background: greenyellow;
+}
+
+footer p {
+    text-align: center;
+    padding: 25px 0px;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: bold;
+    background: #D3E1FC;
+}
+
+.FontEdit {
+    display: flex;
+    gap: 20px;
+    padding: 0px 100px;
+    font-size: 19px;
+}
+
+li.Fontli:hover {
+    transform: translateY(0px);
+}
+
+.FontEdit img:hover {
+    scale: 1.1;
+}
+
+.FontEdit img {
+    cursor: pointer;
+    transition: all .5s;
+}
+
+html.FundoEscuro {
+    background-color: black;
+}
+
+html.FundoClaro {
+    background-color: var(--branco);
+}
+
+.TextoBranco {
+    filter: invert(1);
+}
+
+.BoxDark {
+    background-color: var(--preto);
+}
+
+.DestaqueFrase {
+    color: #3B72AB;
+    font-weight: bold;
+}
+
+.NoFilter {
+    filter: none;
+}
+
+.Titulos15 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+.Titulos15 h3 {
+    font-size: 30px;
+    margin: 10px 0px 22px 0px;
+}
+
+.LineTitulo {
+    background: black;
+    height: 5px;
+    width: 180px;
+}
+
+.IconsBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+.explicacao {
+    padding: 20px 60px;
+}
+
+.explicacao h4 {
+    font-size: 30px;
+}
+
+.explicacao p {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.LineLight {
+    height: 1px;
+    width: 100%;
+    background: #165380;
+}
+
+.videoaula {
+    padding: 20px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.FormButton {
+    border: none;
+    padding: 18px 30px;
+    font-size: 20px;
+    background: yellow;
+    text-transform: uppercase;
+    color: black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+a.EditTextButton {
+    text-decoration: none;
+    color: black;
+}
+
+.d15bdy {
+    background: #0000ff14;
+}
+
+.d19bdy {
+    background: #00800017;
+}
+
+.d22bdy {
+    background: #8080803d;
+}
+
+@media screen and (max-width: 700px) {
+    .MenuHeader {
+        display: flex;
+        flex-direction: column;
+    }
+
+    ol.OrderItensMenu {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    section#SlideHome {
+        display: flex;
+        flex-direction: column;
+    }
+
+    img.ImagemSlide {
+        width: 100%;
+    }
+
+    .TextoSlide h2 {
+        font-size: 36px !important;
+    }
+
+    section#InfoDesc {
+        display: flex;
+        flex-direction: column;
+        padding: 0px 40px;
+        text-align: center;
+    }
+
+    .SelectDescritores {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer p {
+        padding: 10px;
+    }
+
+    .videoaula iframe {
+        width: 320px;
+        height: 178px;
+    }
+
+    .videoaula p {
+        text-align: center;
+    }
+
+    .videoaula h3 {
+        text-align: center;
+    }
+}
